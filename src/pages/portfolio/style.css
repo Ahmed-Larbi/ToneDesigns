@@ -10,6 +10,8 @@
 .po_item {
     display: inline-block;
     width: 100%;
+    max-width: 100%;
+    height: 100%;
     text-align: center;
     margin: 0.5rem auto;
     position: relative;

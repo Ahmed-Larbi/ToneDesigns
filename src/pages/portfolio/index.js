@@ -2,7 +2,13 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import { dataportfolio, meta, } from "../../content_option";
+import Image from "../../assets/images/living.jpg"
+import Image2 from "../../assets/images/12345.jpg"
+import Image3 from "../../assets/images/AA.jpg"
+import Image4 from "../../assets/images/Comparc.jpg"
+import Image5 from "../../assets/images/Highrise.jpg"
+import Image6 from "../../assets/images/Modernext.jpg"
 
 export const Portfolio = () => {
   return (
@@ -20,17 +26,48 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+              <div key={1} className="po_item">
+                <img src={Image} alt="" />
                 <div className="content">
-                  <p>{data.desctiption}</p>
-                  <a href={data.link}>view project</a>
+                  <p>Living Room </p>
+                  <a>view project</a>
                 </div>
               </div>
-            );
-          })}
+              <div key={2} className="po_item">
+                <img src={Image2} alt="" />
+                <div className="content">
+                  <p>Living ROom</p>
+                  <a>view project</a>
+                </div>
+              </div>
+              <div key={3} className="po_item">
+                <img src={Image3} alt="" />
+                <div className="content">
+                  <p> Mosque </p>
+                  <a>view project</a>
+                </div>
+              </div>
+              <div key={4} className="po_item">
+                <img src={Image4} alt="" />
+                <div className="content">
+                  <p> Mosque </p>
+                  <a>view project</a>
+                </div>
+              </div>
+              <div key={5} className="po_item">
+                <img src={Image5} alt="" />
+                <div className="content">
+                  <p> Mosque </p>
+                  <a>view project</a>
+                </div>
+              </div>
+              <div key={6} className="po_item">
+                <img src={Image6} alt="" />
+                <div className="content">
+                  <p> Mosque </p>
+                  <a>view project</a>
+                </div>
+              </div>
         </div>
       </Container>
     </HelmetProvider>

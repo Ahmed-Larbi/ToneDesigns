@@ -1,38 +1,39 @@
-const logotext = "JOHN";
+const logotext = "Tone Studios Design";
 const meta = {
-    title: "John Doe",
+    title: "Tone Studios",
     description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "./assets/images/white.png",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Design Experts",
+        second: "Fast Execution",
+        third: "Instant Payment",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Up & Coming design studios backed by talented experts",
+    your_img_url: "https://png.pngtree.com/background/20210710/original/pngtree-black-light-effect-architectural-background-picture-image_1043219.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "Team background",
     aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Designer",
+        where: "Nadra Al Dabaan",
     },
     {
-        jobtitle: "Designer of week",
+        jobtitle: "Designer",
         where: "Jamalya",
-        date: "2019",
     },
     {
-        jobtitle: "Designer of week",
+        jobtitle: "Designer",
         where: "ALquds",
-        date: "2019",
+    },
+    {
+        jobtitle: "Manager",
+        where: "Yasin Larbi",
     },
 ];
 
@@ -59,78 +60,47 @@ const skills = [{
 ];
 
 const services = [{
-        title: "UI & UX Design",
+        title: "Interior Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Mobile Apps",
+        title: "Exterior Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Wordpress Design",
+        title: "Construction",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
+        img: "../assets/images/living.jpg",
+        desctiption: "Living Room",
+        link: "#",
+    },
+    {
+        img: "../../assets/images/Highrise.jpg",
+        desctiption: "High rise Building",
+        link: "#",
+    },
+    {
+        img: "../../../assets/images/Comparc.jpg",
         desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "../../assets/images/Modernext.jpg",
+        desctiption: "Modern Designs",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "../../assets/images/Mosque.jpg",
+        desctiption: "Mosque",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "../../assets/images/VilaHall.jpg",
+        desctiption: "Long Hall",
         link: "#",
     },
 ];
@@ -147,7 +117,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://instagram.com",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",

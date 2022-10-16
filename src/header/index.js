@@ -4,6 +4,8 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import Image from "../assets/images/ultimate.png";
+import Image2 from "../assets/images/black.png";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -18,7 +20,17 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
+          <picture>
+              <source
+                srcset= {Image2}
+                media="[data-theme: dark]"
+              />
+              <img
+                src={Image}
+                alt="Browser with large and small images of a coffee cup and plants"
+                id="logo"
+              />
+            </picture>
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle />
@@ -38,7 +50,7 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
@@ -52,11 +64,10 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
+            <a href={socialprofils.Instagram}>Instagram</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">Copyright _ {logotext}</p>
           </div>
         </div>
       </header>
