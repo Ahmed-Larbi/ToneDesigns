@@ -1,3 +1,11 @@
+import Image from "./assets/images/homepage2.png"
+import Image1 from "./assets/images/living.jpg"
+import Image2 from "./assets/images/12345.jpg"
+import Image3 from "./assets/images/AA.jpg"
+import Image4 from "./assets/images/Comparc.jpg"
+import Image5 from "./assets/images/Highrise.jpg"
+import Image6 from "./assets/images/Modernext.jpg"
+
 const logotext = "Tone Studios Design";
 const meta = {
     title: "Tone Studios",
@@ -12,27 +20,27 @@ const introdata = {
         third: "Instant Payment",
     },
     description: "Up & Coming design studios backed by talented experts",
-    your_img_url: "https://png.pngtree.com/background/20210710/original/pngtree-black-light-effect-architectural-background-picture-image_1043219.jpg",
+    your_img_url: Image,
 };
 
 const dataabout = {
     title: "Team background",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "Tone Design Studio, is a full-service company located in United Arab Emirates & Saudi Arabia. Specializing in both residential and commercial, and have made many projects as architecture , interior, landscape and execution, since 2019",
 };
 const worktimeline = [{
-        jobtitle: "Designer",
+        jobtitle: "Professional Architect, Specialized in Interior Design",
         where: "Nadra Al Dabaan",
     },
     {
-        jobtitle: "Designer",
-        where: "Jamalya",
+        jobtitle: "Professional Architect, Specialized in Interior Design, Project Management",
+        where: "Hana Hamwi",
     },
     {
-        jobtitle: "Designer",
-        where: "ALquds",
+        jobtitle: "Professional Architect, Specialized in Interior Design, Project Management",
+        where: "Luda Johnson",
     },
     {
-        jobtitle: "Manager",
+        jobtitle: "Business Manager and Co Founder",
         where: "Yasin Larbi",
     },
 ];
@@ -61,45 +69,51 @@ const skills = [{
 
 const services = [{
         title: "Interior Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: `Client Consultation. \n
+        Floor and Space Planning. \n
+        2D/3D Rendering. \n
+        Design Management. \n
+        Painting and Polishing. \n
+        Color Schemes and Lighting Plans. \n
+        Decoration, Restoration, and Installation.`,
     },
     {
         title: "Exterior Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "We provide expert on your home's exterior! We know everything from paint, lighting, doors, awnings, shutters, planters, roof styles, to porticos, home additions, and cladding.",
     },
     {
         title: "Construction",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "We ensure that every decision being made will maximize your investment. With our creative partners you can trust, this pre-construction phase will help set your project up for success.",
     },
 ];
 
 const dataportfolio = [{
-        img: "../assets/images/living.jpg",
+        img: Image1,
         desctiption: "Living Room",
         link: "#",
     },
     {
-        img: "../../assets/images/Highrise.jpg",
+        img: Image2,
         desctiption: "High rise Building",
         link: "#",
     },
     {
-        img: "../../../assets/images/Comparc.jpg",
+        img: Image3,
         desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "../../assets/images/Modernext.jpg",
+        img: Image4,
         desctiption: "Modern Designs",
         link: "#",
     },
     {
-        img: "../../assets/images/Mosque.jpg",
+        img: Image5,
         desctiption: "Mosque",
         link: "#",
     },
     {
-        img: "../../assets/images/VilaHall.jpg",
+        img: Image6,
         desctiption: "Long Hall",
         link: "#",
     },
@@ -111,13 +125,13 @@ const contactConfig = {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_i0xeo7f",
+    YOUR_TEMPLATE_ID: "template_lilfhks",
+    YOUR_USER_ID: "4aJW5PJP3CRcAksNb",
 };
 
 const socialprofils = {
-    github: "https://instagram.com",
+    github: "https://instagram.com/tonedesignstudio",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
