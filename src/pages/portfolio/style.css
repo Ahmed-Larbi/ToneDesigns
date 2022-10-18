@@ -25,6 +25,7 @@
 
 .po_item img {
     max-width: 100%;
+    min-height: 100%;
 }
 
 .po_item .content {
@@ -37,13 +38,11 @@
     background: var(--overlay-color);
     z-index: 1;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
     transition: 0.3s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     border: 1px solid black;
 }
 
@@ -55,7 +54,7 @@
 }
 
 .po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 15px 1 rgba(0, 0, 0, 0.25);
 }
 
 .po_item:hover .content {
@@ -80,3 +79,52 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.po_item .content #button1{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.po_item .content #button2{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .po_item .content #button4{
+    position: absolute;
+    top: 25%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .po_item .content #button3{
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    padding: 15px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }

@@ -3,8 +3,28 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta, } from "../../content_option";
+import FsLightbox from 'fslightbox-react';
 
 export const Portfolio = () => {
+
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [imgIndex, setImgIndex] = React.useState(0);
+
+  function imgDecider(image)
+  {
+    if(image === "BedRoom")
+    {
+      setImgIndex(1)
+    }
+    else if (image === "Hall")
+    {
+      setImgIndex(3)
+    }
+    else {
+      setImgIndex(0)
+    }
+  }
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -19,18 +39,23 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-        {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+        <div>
+        <div key={imgIndex} className="po_item">
+                <img src={dataportfolio[0].img} alt="" />
                 <div className="content">
-                  <p>{data.desctiption}</p>
-                  <a href={data.link}>view project</a>
+                  <button id="button1" onClick={ () => {setIsOpen(!isOpen); imgDecider("BedRoom") }}> Bed Room </button>
+                  <button id="button2" onClick={ () => {setIsOpen(!isOpen); imgDecider("Hall") }}> Hall </button>
+                  <button id="button3" onClick={ () => {setIsOpen(!isOpen); imgDecider("Entrance") }}> Entrance </button>
+                  <button id="button4" onClick={ () => {setIsOpen(!isOpen); imgDecider("Bathroom") }}> Bathroom </button>
                 </div>
-              </div>
-            );
-          })}
+          </div>
+
+          <FsLightbox
+                  toggler={isOpen}
+                  sources={[
+                  dataportfolio[imgIndex].img
+                  ]}
+                  />
         </div>
       </Container>
     </HelmetProvider>

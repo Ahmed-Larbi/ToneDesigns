@@ -1,5 +1,5 @@
 import Image from "./assets/images/homepage2.png"
-import Image1 from "./assets/images/living.jpg"
+import Image1 from "./assets/images/2DPlans/2Dplan1.png"
 import Image2 from "./assets/images/12345.jpg"
 import Image3 from "./assets/images/AA.jpg"
 import Image4 from "./assets/images/Comparc.jpg"
