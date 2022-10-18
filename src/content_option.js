@@ -93,7 +93,7 @@ const dataportfolio = [{
         link: "#",
     },
     {
-        img: Image2,
+        img: [Image2,Image3,Image4,Image5],
         desctiption: "High rise Building",
         link: "#",
     },

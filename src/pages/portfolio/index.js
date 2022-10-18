@@ -52,9 +52,9 @@ export const Portfolio = () => {
 
           <FsLightbox
                   toggler={isOpen}
-                  sources={[
+                  sources={
                   dataportfolio[imgIndex].img
-                  ]}
+                  }
                   />
         </div>
       </Container>
