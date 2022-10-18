@@ -44,6 +44,7 @@
     transition: 0.3s ease-in-out;
     opacity: 1;
     border: 1px solid black;
+    -webkit-text-size-adjust: unset;
 }
 
 .po_item .content {
@@ -86,7 +87,7 @@
   left: 30%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 1vh;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -98,7 +99,7 @@
     left: 55%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 1vh;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -110,7 +111,7 @@
     left: 72%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 1vh;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -122,7 +123,7 @@
     left: 53%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 1vh;
     padding: 15px 24px;
     border: none;
     cursor: pointer;
