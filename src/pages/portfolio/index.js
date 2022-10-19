@@ -4,11 +4,29 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta, } from "../../content_option";
 import FsLightbox from 'fslightbox-react';
+import Select from "react-select";
+import { buildQueries } from "@testing-library/react";
 
 export const Portfolio = () => {
 
   const [isOpen, setIsOpen] = React.useState(false);
   const [imgIndex, setImgIndex] = React.useState(0);
+  const [imgType, setImgType] = React.useState(0);
+
+  const selections = [
+    { value: 'resident', label: 'Residential', color: "black" },
+    { value: 'commerce', label: 'Commercial', color: "black" },
+    { value: 'industry', label: 'Industrial', color: "black" }
+  ]
+
+  const colorStyles = {
+    option: (styles, { data }) => {
+        return {
+            ...styles,
+            backgroundColor: data.color,
+        };
+    },
+};
 
   function imgDecider(image)
   {
@@ -18,10 +36,25 @@ export const Portfolio = () => {
     }
     else if (image === "Hall")
     {
-      setImgIndex(3)
+      setImgIndex(1)
     }
     else {
-      setImgIndex(0)
+      setImgIndex(1)
+    }
+  }
+
+  const handleChange = (event) => {
+    switch(event.label)
+    {
+      case "Residential":
+        setImgType(0)
+        break
+      case "Commercial":
+        setImgType(2)
+        break
+      default:
+        setImgType(4)
+        break
     }
   }
 
@@ -39,21 +72,26 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+        <Select options = {selections}menuPortalTarget={document.body} 
+    styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) } } onChange={handleChange} classNamePrefix="selectFilter"/>
         <div>
         <div key={imgIndex} className="po_item">
-                <img src={dataportfolio[0].img} alt="" />
+                <img src={dataportfolio[imgType].img} alt="" />
+                { imgType === 0 ?
                 <div className="content">
                   <button id="button1" onClick={ () => {setIsOpen(!isOpen); imgDecider("BedRoom") }}> Bed Room </button>
                   <button id="button2" onClick={ () => {setIsOpen(!isOpen); imgDecider("Hall") }}> Hall </button>
                   <button id="button3" onClick={ () => {setIsOpen(!isOpen); imgDecider("Entrance") }}> Entrance </button>
                   <button id="button4" onClick={ () => {setIsOpen(!isOpen); imgDecider("Bathroom") }}> Bathroom </button>
                 </div>
+               : <h2>Here</h2>}
           </div>
 
           <FsLightbox
                   toggler={isOpen}
                   sources={
                   dataportfolio[imgIndex].img
+                  
                   }
                   />
         </div>
